@@ -31,8 +31,8 @@ class ArticleAdapter (private val cryptoList : ArrayList<NewsModel.Articles>, pr
 
             itemView.setOnClickListener{ listener.onItemClick(retroCrypto) }
             itemView.setBackgroundColor(Color.parseColor(colors[position % 8]))
-            itemView.text_name.text = retroCrypto.author
-            itemView.text_price.text = retroCrypto.title
+            itemView.author_name.text = retroCrypto.author
+            itemView.author_title.text = retroCrypto.title
 
 
         }
